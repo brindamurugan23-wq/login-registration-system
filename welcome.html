@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>Welcome</title>
+
+     <link rel="stylesheet" href="newstyle.css">
+     
+</head>
+
+<body>
+
+<div class="container">
+
+    <div class="top-section">
+
+        <h1>WELCOME</h1>
+
+        <p>Login Successful</p>
+
+    </div>
+
+    <div class="bottom-section">
+
+        <h2 id="HelloUser">Hello User👋</h2>
+
+        <p>You have logged in successfully.</p>
+
+        <br>
+
+        <a href="register.html">
+
+            <button type="button">Registration</button>
+
+        </a>
+
+    </div>
+
+</div>
+<script>
+
+    var username = localStorage.getItem("Username");
+
+    document.getElementById("HelloUser").innerHTML =
+    "Hello " + username + " 👋";
+
+</script>
+
+</body>
+
+</html>

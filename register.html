@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Registration</title>
+
+    <link rel="stylesheet" href="newstyle.css">
+</head>
+
+<body>
+
+<form id="internshipForm" action="#">
+
+<h1>Internship Registration</h1>
+
+<input type="text" placeholder="Full Name"required>
+
+<input type="text" placeholder="School/College Name"required>
+<select id="studentType" onchange="showCourses()" required>
+    <option value="">Select Student Type</option>
+    <option value="School">School Student</option>
+    <option value="College">College Student</option>
+</select>
+
+<input type="email" placeholder="Email"required>
+<select id="Course" required>
+    <option value="">Select Course</option>
+
+</select>
+<input type="text" placeholder="Skills"required>
+
+<input type="file">
+
+<input type="submit" value="Apply">
+
+</form>
+<div id="loadingScreen">
+
+    <h2>Submitting Application...</h2>
+
+    <div class="progress-container">
+
+        <div id="progressBar"></div>
+
+    </div>
+
+    <p id="progressText">0%</p>
+
+</div>
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,130 @@
+body{
+    background-image: url("./assets/img/backgrd.png");
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-family: Arial;
+}
+
+form{
+    background: rgba(255,255,255,0.15);
+    padding: 30px;
+    border-radius: 15px;
+    width: 300px;
+
+    backdrop-filter: blur(10px);
+}
+
+h1{
+    color: white;
+    text-align: center;
+}
+
+input{
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 8px;
+    border: none;
+}
+
+input[type="submit"]{
+    background-color: purple;
+    color: white;
+}
+.success-box{
+    background: rgba(255,255,255,0.15);
+    padding: 40px;
+    border-radius: 15px;
+
+    backdrop-filter: blur(10px);
+
+    text-align: center;
+    color: white;
+}
+button{
+    padding: 12px 20px;
+    background-color: purple;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover{
+    background-color: darkviolet;
+}
+input[type="checkbox"]{
+    width: auto;
+    margin-right: 5px;
+}
+select{
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 8px;
+    border: none;
+    font-size: 16px;
+}
+#loadingScreen{
+
+    display:none;
+
+    position:fixed;
+
+    top:0;
+    left:0;
+
+    width:100%;
+    height:100%;
+
+    background:white;
+
+    justify-content:center;
+    align-items:center;
+
+    flex-direction:column;
+
+    z-index:9999;
+}
+
+.progress-container{
+
+    width:350px;
+
+    height:25px;
+
+    background:#ddd;
+
+    border-radius:20px;
+
+    overflow:hidden;
+
+    margin-top:20px;
+}
+
+#progressBar{
+
+    width:0%;
+
+    height:100%;
+
+    background:linear-gradient(90deg,#7b2ff7,#f107a3);
+
+    transition:width 0.1s;
+}
+
+#progressText{
+
+    font-size:20px;
+
+    margin-top:15px;
+
+    font-weight:bold;
+}

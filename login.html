@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Login Form</title>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="newstyle.css">
+</head>
+
+<body>
+<div class="container">
+    <div class="top-section">
+
+        <h1>WELCOME</h1>
+
+        <p>Welcome to the website</p>
+
+    </div>
+
+    <div class="bottom-section">
+
+        <h2>USER LOGIN</h2>
+
+        <form action="welcome.html" onsubmit="saveUsername()">
+
+            <input type="text" placeholder="Username" id="Username"required>
+
+            <input type="password" placeholder="Password" id="Password"required>
+            <br><br>
+            <label>
+            <input type="checkbox" onclick="showPassword()">
+            Show Password 
+            </label>
+            <div class="links">
+
+                <a href="#">Remember me</a>
+
+                <a href="#">Forgot password?</a>
+
+            </div>
+
+            <br>
+
+            <button type="Submit">LOGIN</button>
+
+        </form>
+
+    </div>
+
+</div>
+</body>
+
+</html>
